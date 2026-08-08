@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--  
+            <i class="fa-solid fa-trash"></i>     // Trash
+            <i class="fa-solid fa-plus"></i>      // Plus
+            <i class="fa-solid fa-minus"></i>     // Minus
+            <i class="fa-solid fa-car-side"></i>  // Car
+            <i class="fa-solid fa-box-open"></i>  // Box
+            <i class="fa-solid fa-cart-shopping"></i> // Trolly
+    -->
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="phone smart device airpods iphone keyboard VR RV Internet headphone mobile stand">
+    <meta name="author" content="Huda, Haidy, Mariam">
+
+    <title>Shopping Store</title>
+
+    <link rel="icon" href="assets/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button id="openCartBtn" class="cart-icon-btn" type="button" aria-label="Open shopping cart" title="Open shopping cart">
+            <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+            <span id="cartCount">0</span> 
+            </button>
+        </nav>
+    </header>
+
+                        <!-- asside -->
+    <aside class="aside-sec" id="aside-sec">
+        <section class="head-section">
+            <h3 class="aside-title">Shopping cart</h3>
+            <button id="closeCartBtn" class="close-btn" type="button" aria-label="Close shopping cart" title="Close shopping cart">
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+        </section>
+                        <!-- aside body -->
+        <section class="body-section" id="cartItemsContainer">
+            <div class="empty-cart" id="emptyCart">
+                <p>Your cart is empty </p>
+            </div>
+
+            <div class="cart-item">
+                <img src="../Shopping Cart/assets/Smart Watch.jpg" alt="smart" width="100px" height="100px" class="product-img">
+                <div class="item-details">
+                    <h4 class="item-name">Smart watch</h4>
+                    <span class="item-price">1,250 EGP</span>
+
+                    <div class="quantity-controls">
+                        <button class="qty-btn">-</button>
+                        <span class="qty-number">1</span>
+                        <button class="qty-btn">+</button>
+                        <button class="delete-btn" title="button">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+                </div>
+                    <div class="item-total-price">1,250 EGP</div>
+                
+            </div>
+            <div class="cart-item">
+                <img src="../Shopping Cart/assets/AirPods.jpg" alt="smart" width="100px" height="100px" class="product-img">
+                <div class="item-details">
+                    <h4 class="item-name">AirPods</h4>
+                    <span class="item-price">850 EGP</span>
+
+                    <div class="quantity-controls">
+                        <button class="qty-btn">-</button>
+                        <span class="qty-number">1</span>
+                        <button class="qty-btn">+</button>
+                        <button class="delete-btn" title="button">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+                </div>
+                    <div class="item-total-price">850 EGP</div>
+                
+            </div>
+            <div class="cart-item">
+                <img src="../Shopping Cart/assets/PlayStation Controller.jpg" alt="smart" width="100px" height="100px" class="product-img">
+                <div class="item-details">
+                    <h4 class="item-name">PlayStation Controller</h4>
+                    <span class="item-price">1,200 EGP</span>
+
+                    <div class="quantity-controls">
+                        <button class="qty-btn">-</button>
+                        <span class="qty-number">1</span>
+                        <button class="qty-btn">+</button>
+                        <button class="delete-btn" title="button">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+                </div>
+                    <div class="item-total-price">1,200 EGP</div>
+                
+            </div>
+
+        </section>
+        <footer class="footer-section">
+                <div class="subtotal">
+                    <span>Subtotal:</span>
+                    <span id="cartTotalPrice" class="total-amount">0.00 EGP</span>
+                </div>
+
+                <div class="footer-actions">
+                    <button id="checkoutBtn" class="checkout-btn">Checkout</button>
+                    <button id="clearCartBtn" class="clear-btn">Clear Cart</button>
+                </div>
+        </footer>
+    </aside>
+
+            
+<script src="index.js"></script>
+</body>
+</html>
